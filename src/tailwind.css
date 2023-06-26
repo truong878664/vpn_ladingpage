@@ -4,7 +4,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
 }
 
 /* Track */
@@ -14,10 +14,62 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f53838;
+  background: rgba(245, 56, 56, 0.8);
+  border-radius: 10px;
+
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  /* background: #555; */
+  background: rgba(245, 56, 56, 1);
+
+  border-radius: 10px;
 }
+
+html {
+  -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+button{
+  transition: all 250ms;
+}
+button:not(.normal-btn):hover {
+  box-shadow: rgba(245, 56, 56, .2) 0 -25px 18px -14px inset,rgba(245, 56, 56, .15) 0 1px 2px,rgba(245, 56, 56, .15) 0 2px 4px,rgba(245, 56, 56, .15) 0 4px 8px,rgba(245, 56, 56, .15) 0 8px 16px,rgba(245, 56, 56, .15) 0 16px 32px;
+
+  transform: scale(1.01) rotate(-1deg);
+}
+
+/* CSS */
+/* .button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(245, 56, 56, .2) 0 -25px 18px -14px inset,rgba(245, 56, 56, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+} */

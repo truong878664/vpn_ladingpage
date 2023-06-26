@@ -9,7 +9,12 @@ module.exports = {
         left: {
           '0%': { left: '0' },
           '100%': { left: '-50%' },
+        },
+        color: {
+          '0%, 100%': {color: '#F53838'},
+          '50%': {color: '#FF7777'}
         }
+
       }
     },
     colors: {
