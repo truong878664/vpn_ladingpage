@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaslesVPN</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./public/font/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./public/img/logo.svg"
+      type="image/x-icon"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end font -->
+  </head>
+  <body class="text-sm md:text-base selection:bg-main selection:text-white">
+    <!-- LOADING -->
+    <section id="loading">
+      <div
+        class="fixed top-0 left-0 right-0 bottom-0 bg-white z-[51] cursor-wait select-none"
+      >
+        <div
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-2/3 after:w-20 after:h-10 after:absolute after:right-0 after:bottom-0 after:bg-white"
+        >
+          <img class="bg-white max-w-md" src="./public/img/logo.gif" alt="" />
+        </div>
+      </div>
+      <script>
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            document.getElementById("loading").remove();
+          }, 2500);
+        });
+      </script>
+    </section>
+    <!-- END LOADING -->
+    <div class="container mx-auto">
+      <!-- HEADER -->
+      <header>
+        <div
+          class="fixed w-full top-0 left-0 h-12 z-50 bg-white border-b-2 border-main"
+        >
+          <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+              <img
+                class="w-6 h-6s mr-2 object-contain"
+                src="./public/img/logo.svg"
+                alt="logo VPN"
+              />
+              <div class="text-lg">
+                Lasles<span
+                  class="font-bold animate-[color_2s_ease-in_infinite]"
+                  >VPN</span
+                >
+              </div>
+            </div>
+
+            <!-- navbar -->
+            <input
+              type="checkbox"
+              class="peer/navbar"
+              id="input-navbar"
+              hidden
+            />
+
+            <label
+              for="input-navbar"
+              class="text-2xl peer-checked/navbar:hidden md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <div
+              class="fixed top-0 left-0 right-0 bottom-0 bg-[rgba(255,255,255,.92)] md:bg-transparent transition-[transform,opacity] duration-500 translate-x-full opacity-0 peer-checked/navbar:opacity-100 peer-checked/navbar:translate-x-0 md:opacity-100 md:translate-x-0 md:relative md:block md:flex-1"
+            >
+              <label
+                for="input-navbar"
+                class="text-2xl cursor-pointer py-1 px-4 inline-block absolute right-0 top-0 md:hidden"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </label>
+
+              <div
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-8 text-xl md:translate-x-0 md:translate-y-0 md:relative md:flex md:items-center md:p-0 md:top-0 md:left-0 md:text-base md:justify-between"
+              >
+                <ul class="md:flex md:flex-1 md:justify-center">
+                  <li
+                    class="py-3 hover:text-main transition-all cursor-pointer md:py-0 md:mx-5"
+                  >
+                    features
+                  </li>
+                  <li
+                    class="py-3 hover:text-main transition-all cursor-pointer md:py-0 md:mx-5"
+                  >
+                    Pricing
+                  </li>
+                  <li
+                    class="py-3 hover:text-main transition-all cursor-pointer md:py-0 md:mx-5"
+                  >
+                    Testimonial
+                  </li>
+                  <li
+                    class="py-3 hover:text-main transition-all cursor-pointer md:py-0 md:mx-5"
+                  >
+                    Help
+                  </li>
+                </ul>
+
+                <div class="mt-8 font-bold flex md:mt-0 md:font-normal">
+                  <button
+                    class="py-1 w-32 m-1 rounded-full border-2 border-transparent normal-btn hover:text-main md:w-24"
+                  >
+                    Sign in
+                  </button>
+                  <button
+                    class="py-1 w-32 m-1 rounded-full border-2 bg-white border-main text-main hover:text-white hover:bg-main transition-all md:w-24"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- end navbar -->
+          </div>
+        </div>
+      </header>
+      <!-- END HEADER -->
+
+      <section>
+        <div
+          class="mt-20 px-3 flex flex-col items-center md:flex-row-reverse md:mb-16 md:mt-40"
+        >
+          <img
+            class="w-3/4 md:w-1/2"
+            src="./public/img/paner_image2.webp"
+            alt=""
+          />
+
+          <div class="mt-9 text-center md:text-left md:w-1/2 pr-8">
+            <h4 class="w-5/6 mx-auto text-4xl md:w-full lg:text-5xl">
+              Want anything to be easy with
+              <span class="font-bold">LaslesVPN</span>
+            </h4>
+            <p class="mt-4 md:mt-8">
+              Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
+            </p>
+            <button
+              class="mt-8 font-bold bg-main text-white rounded-2xl px-6 py-2 md:mt-10"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- LINE INFORMATION -->
+      <section
+        class="mt-7 w-5/6 mx-auto flex items-center justify-between shadow-custom px-4 py-6 rounded-xl max-w-4xl"
+      >
+        <div class="flex items-center justify-center w-full">
+          <span
+            class="text-lg mr-5 text-main relative after:absolute after:w-8 after:h-8 after:bg-main after:opacity-10 after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full"
+          >
+            <i class="fa-solid fa-user"></i>
+          </span>
+          <div class="flex flex-col">
+            <span class="font-bold">90+</span>
+            <span class="">Users</span>
+          </div>
+        </div>
+        <div class="h-6 w-[1px] bg-stone-300"></div>
+        <div class="flex items-center justify-center w-full">
+          <span
+            class="text-lg mr-5 text-main relative after:absolute after:w-8 after:h-8 after:bg-main after:opacity-10 after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+          <div class="flex flex-col">
+            <span class="font-bold">30+</span>
+            <span class="">Locations</span>
+          </div>
+        </div>
+        <div class="h-6 w-[1px] bg-stone-300"></div>
+
+        <div class="flex items-center justify-center w-full">
+          <span
+            class="text-lg mr-5 text-main relative after:absolute after:w-8 after:h-8 after:bg-main after:opacity-10 after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full"
+          >
+            <i class="fa-solid fa-code-merge"></i>
+          </span>
+          <div class="flex flex-col">
+            <span class="font-bold">50+</span>
+            <span class="">Servers</span>
+          </div>
+        </div>
+      </section>
+      <!-- END LINE INFORMATION -->
+      <section>
+        <div
+          class="mt-7 w-4/6 mx-auto md:flex md:justify-center md:w-full md:mt-20"
+        >
+          <div class="w-full md:w-1/2 md:mx-auto">
+            <img
+              class="w-full md:w-4/6"
+              src="./public/img/paner_image2.webp"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2">
+            <div class="md:w-4/6 md:mx-auto">
+              <div class="mx-1">
+                <h4 class="text-2xl font-bold mt-7">
+                  <span class="block">We provide many</span
+                  ><span class="block">features you can use</span>
+                </h4>
+                <p class="my-2 md:text-base">
+                  You can explore the features that we provide with fun and have their own functions each feature.
+                </p>
+              </div>
+
+              <ul class="mt-4 md:text-base">
+                <li class="flex items-center mb-4">
+                  <span class="mr-3 text-green-500">
+                    <i class="fa-solid fa-check-circle"></i>
+                  </span>
+                  <p class="font-bold">Powerfull online protection.</p>
+                </li>
+
+                <li class="flex items-center mb-4">
+                  <span class="mr-3 text-green-500">
+                    <i class="fa-solid fa-check-circle"></i>
+                  </span>
+                  <p class="font-bold">Internet with borders</p>
+                </li>
+
+                <li class="flex items-center mb-4">
+                  <span class="mr-3 text-green-500">
+                    <i class="fa-solid fa-check-circle"></i>
+                  </span>
+                  <p class="font-bold">Supercharged VPN</p>
+                </li>
+
+                <li class="flex items-center mb-4">
+                  <span class="mr-3 text-green-500">
+                    <i class="fa-solid fa-check-circle"></i>
+                  </span>
+                  <p class="font-bold">No specific time limitsborders</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLAN -->
+      <section>
+        <div class="relative w-full mt-16">
+          <div class="text-center w-2/3 mx-auto mb-10">
+            <h4 class="font-bold text-2xl mb-2">Choose your plan</h4>
+            <p class="">
+              Let's choose the package that is best for you and explore it happily and cheerfully.
+            </p>
+          </div>
+          <div
+            class="w-full h-[670px] relative overflow-x-hidden md:h-fit overflow-y-hidden md:overflow-visible"
+          >
+            <input
+              type="radio"
+              data-slide="1"
+              class="absolute hidden top-0 left-0 z-10 peer/banner1"
+              name="banner"
+              id=""
+            />
+            <input
+              type="radio"
+              data-slide="2"
+              class="absolute hidden top-0 left-4 z-10 peer/banner2"
+              checked
+              name="banner"
+              id=""
+            />
+            <input
+              type="radio"
+              data-slide="3"
+              class="absolute hidden top-0 left-8 z-10 peer/banner3"
+              name="banner"
+              id=""
+            />
+
+            <div
+              id="card-wrapper"
+              data-slide-active="2"
+              class="group/wrapper cursor-pointer w-[130%] select-none flex absolute top-2 transition-all duration-1000 peer-checked/banner1:left-1/3 peer-checked/banner2:-left-[15%] peer-checked/banner3:-left-2/3 md:w-full md:relative md:!left-0"
+            >
+              <div
+                data-position="1"
+                class="w-1/3 shrink-0 px-2 scale-95 transition-all opacity-50 duration-1000 group-data-[slide-active='1']/wrapper:scale-100 group-data-[slide-active='1']/wrapper:opacity-100 md:!scale-100 md:opacity-100"
+              >
+                <div
+                  class="border rounded-lg px-4 flex flex-col items-center p-2 h-full justify-between"
+                >
+                  <img src="./public/img/box_plan/free.svg" class="w-2/4" alt="" />
+                  <span class="pt-8 pb-4 font-bold">Free</span>
+                  <ul class="w-fit flex-1">
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Unlimited bandwitch</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Encrypted connection</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Yes trafic logs</span
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="mt-8 text-xl">
+                    <span class="font-bold">Free</span>
+                  </div>
+                  <button
+                    class="bg-main font-bold py-1 px-8 text-white rounded-full mt-2"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+
+              <div
+                data-position="2"
+                class="w-1/3 shrink-0 px-2 scale-95 transition-all opacity-50 duration-1000 group-data-[slide-active='2']/wrapper:scale-100 group-data-[slide-active='2']/wrapper:opacity-100 md:!scale-100 md:opacity-100"
+              >
+                <div
+                  class="border rounded-lg px-4 flex flex-col items-center p-2 h-full justify-between"
+                >
+                  <img src="./public/img/box_plan/basic.svg" class="w-2/4" alt="" />
+                  <span class="pt-8 pb-4 font-bold">Standard plan</span>
+                  <ul class="w-fit flex-1">
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Unlimited bandwitch</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Encrypted connection</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Yes trafic logs</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Works on all devices</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Connect anyware</span
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="mt-8 text-xl">
+                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                    <span class="font-bold">9 /</span> mo
+                  </div>
+                  <button
+                    class="bg-main font-bold py-1 px-8 text-white rounded-full mt-2"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+
+              <div
+                data-position="3"
+                class="w-1/3 shrink-0 px-2 scale-95 transition-all opacity-50 duration-1000 group-data-[slide-active='3']/wrapper:scale-100 group-data-[slide-active='3']/wrapper:opacity-100 md:!scale-100 md:opacity-100"
+              >
+                <div
+                  class="border rounded-lg px-4 flex flex-col items-center p-2 h-full justify-between"
+                >
+                  <img src="./public/img/box_plan/premium.svg" class="w-2/4" alt="" />
+                  <span class="pt-8 pb-4 font-bold">Premium plan</span>
+                  <ul class="w-fit flex-1">
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Unlimited bandwitch</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Encrypted connection</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Yes trafic logs</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Works on all devices</span
+                      >
+                    </li>
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Connect anyware</span
+                      >
+                    </li>
+
+                    <li class="my-8 flex">
+                      <span class="text-green-500 mr-1 md:mr-4"
+                        ><i class="fa-solid fa-check-circle"></i
+                      ></span>
+                      <span class="whitespace-nowrap text-xs md:text-base"
+                        >Get new features</span
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="mt-8 text-xl">
+                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                    <span class="font-bold">12 /</span> mo
+                  </div>
+                  <button
+                    class="bg-main font-bold py-1 px-8 text-white rounded-full mt-2"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const cardWrapper = document.getElementById("card-wrapper");
+          const $ = document.querySelector.bind(document);
+
+          cardWrapper.addEventListener("click", (e) => {
+            const slidePositionActive = $("[data-slide]:checked").dataset.slide;
+            const slidePositionClick =
+              e.target.closest("[data-position]")?.dataset.position;
+
+            if (slidePositionActive !== slidePositionClick) {
+              const currentSlide = $(`[data-slide="${slidePositionClick}"]`);
+
+              currentSlide && (currentSlide.checked = true);
+              $("[ data-slide-active]").dataset.slideActive =
+                slidePositionClick;
+            }
+          });
+        </script>
+      </section>
+      <!-- END PLAN -->
+
+      <!-- MAP WORD -->
+      <section>
+        <div class="mt-12 w-10/12 mx-auto">
+          <div class="w-5/6 mx-auto text-center">
+            <div class="mb-10">
+              <h4 class="font-bold text-2xl w-3/4 mx-auto mb-3">
+                Huge global network of fast VPN
+              </h4>
+              <p class="">
+                See LaslesVPN everywhere to make it easier for you when you move locations.
+              </p>
+            </div>
+            <img class="w-full" src="./public/img/map_word.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- END MAP WORD -->
+      <!-- BRAND -->
+      <section>
+        <div
+          class="w-full px-8 relative md:mt-8 h-20 md:h-40 lg:h-60 overflow-hidden"
+        >
+          <div
+            class="w-full flex absolute animate-[left_10s_linear_infinite] hover:[animation-play-state:paused]"
+          >
+            <div class="w-full relative shrink-0">
+              <img class="w-full" src="./public/img/branch/branch.png" alt="" />
+              <div class="absolute left-0 top-0 w-full flex h-full">
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/netflix.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/reddit.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/amazon.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/discord.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/spotify.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="w-full relative shrink-0">
+              <img class="w-full" src="./public/img/branch/branch.png" alt="" />
+              <div class="absolute left-0 top-0 w-full flex h-full">
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/netflix.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/reddit.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/amazon.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/discord.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/spotify.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="w-full relative shrink-0">
+              <img class="w-full" src="./public/img/branch/branch.png" alt="" />
+              <div class="absolute left-0 top-0 w-full flex h-full">
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/netflix.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/reddit.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/amazon.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/discord.png"
+                  alt=""
+                />
+                <img
+                  class="opacity-0 hover:opacity-100 transition-all"
+                  src="./public/img/branch/spotify.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END BRAND -->
+      <!-- COMMENT -->
+      <section>
+        <div class="mb-16">
+          <div class="mb-10 text-center">
+            <h4 class="font-bold text-2xl w-3/4 mx-auto mb-3">
+              Huge global network of fast VPN
+            </h4>
+            <p class="">
+              These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+            </p>
+          </div>
+
+          <div
+            class="w-full relative overflow-hidden h-48 px-6 md:h-72 lg:h-48"
+          >
+            <div
+              class="flex w-full h-full bg- absolute pl-6 left-0 top-0 transition-all duration-1000 md:pl-0"
+              style="transform: translateX"
+              id="comment-wrapper"
+            >
+              <div class="pr-3 w-5/6 shrink-0 md:w-1/3">
+                <div class="border rounded-xl p-3 h-full">
+                  <div class="flex justify-between items-center mb-4">
+                    <img
+                      class="w-10 h-10 object-cover rounded-full mr-4"
+                      src="./public/img/user/user1.png"
+                      alt=""
+                    />
+                    <div class="flex-1">
+                      <span class="block font-bold">Brooklyn Simmons</span>
+                      <span class="block text-stone-400">Warsaw,pland</span>
+                    </div>
+                    <div class="h-full self-end flex my-1">
+                      <span class="mr-1">4.6</span>
+                      <span class="text-yellow-400"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    “These are the stories of our customers who have joined us with great pleasure when using this crazy feature.”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pr-3 w-5/6 shrink-0 md:w-1/3">
+                <div class="border rounded-xl p-3 h-full">
+                  <div class="flex justify-between items-center mb-4">
+                    <img
+                      class="w-10 h-10 object-cover rounded-full mr-4"
+                      src="./public/img/user/user2.png"
+                      alt=""
+                    />
+                    <div class="flex-1">
+                      <span class="block font-bold">Darlene Robertson</span>
+                      <span class="block text-stone-400">Warsaw,pland</span>
+                    </div>
+                    <div class="h-full self-end flex my-1">
+                      <span class="mr-1">4.6</span>
+                      <span class="text-yellow-400"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    “wow...iam very happy to use this vpn,it turned out to be
+                    more than my expectations and so far there have been no
+                    problems. laslesvpn always the best”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pr-3 w-5/6 shrink-0 md:w-1/3">
+                <div class="border rounded-xl p-3 h-full">
+                  <div class="flex justify-between items-center mb-4">
+                    <img
+                      class="w-10 h-10 object-cover rounded-full mr-4"
+                      src="./public/img/user/user3.png"
+                      alt=""
+                    />
+                    <div class="flex-1">
+                      <span class="block font-bold">Darrell Steward</span>
+                      <span class="block text-stone-400">Warsaw,pland</span>
+                    </div>
+                    <div class="h-full self-end flex my-1">
+                      <span class="mr-1">4.6</span>
+                      <span class="text-yellow-400"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <p class="">
+                    “This is very unusual for my business that currently requires a
+                    virtual private network that has high security”.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pr-3 w-5/6 shrink-0 md:w-1/3">
+                <div class="border rounded-xl p-3 h-full">
+                  <div class="flex justify-between items-center mb-4">
+                    <img
+                      class="w-10 h-10 object-cover rounded-full mr-4"
+                      src="./public/img/user/user4.png"
+                      alt=""
+                    />
+                    <div class="flex-1">
+                      <span class="block font-bold">Tran Quoc Truong</span>
+                      <span class="block text-stone-400"
+                        >Ho Chi Minh, Viet Nam</span
+                      >
+                    </div>
+                    <div class="h-full self-end flex my-1">
+                      <span class="mr-1">0.1</span>
+                      <span class="text-yellow-400"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <p class="">“wow...not good!”.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- action comment -->
+          <div class="flex justify-between items-center px-6 mt-3">
+            <ul class="flex" id="position-comment">
+              <li
+                class="w-2 h-2 rounded-full bg-stone-300 mr-2 transition-all duration-1000 [&.active]:w-5 [&.active]:bg-main active"
+              ></li>
+              <li
+                class="w-2 h-2 rounded-full bg-stone-300 mr-2 transition-all duration-1000 [&.active]:w-5 [&.active]:bg-main"
+              ></li>
+              <li
+                class="w-2 h-2 rounded-full bg-stone-300 mr-2 transition-all duration-1000 [&.active]:w-5 [&.active]:bg-main"
+              ></li>
+              <li
+                class="w-2 h-2 rounded-full bg-stone-300 mr-2 transition-all duration-1000 [&.active]:w-5 [&.active]:bg-main"
+              ></li>
+            </ul>
+            <div class="" id="action-move-comment">
+              <button
+                data-type="left"
+                class="text-stone-300 hover:text-main text-2xl mx-1 transition-all normal-btn"
+              >
+                <i class="fa-solid fa-circle-chevron-left"></i>
+              </button>
+              <button
+                data-type="right"
+                class="text-stone-300 hover:text-main text-2xl mx-1 transition-all normal-btn"
+              >
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </button>
+            </div>
+            <script>
+              //move comment item
+              const actionMoveComment = document.getElementById(
+                "action-move-comment"
+              );
+              const commentWrapper = document.getElementById("comment-wrapper");
+              const commentLength = commentWrapper.children.length - 1;
+              let currentIndexComment = 0;
+
+              const positionComment =
+                document.getElementById("position-comment");
+              renderPositionComment();
+              actionMoveComment.addEventListener("click", (e) => {
+                const actionBtn = e.target.closest("[data-type]");
+                if (!actionBtn) {
+                  return;
+                }
+                const typeAction = actionBtn.dataset.type;
+                moveComment(typeAction);
+              });
+
+              function renderPositionComment() {
+                const itemPosition = `<li class="w-2 h-2 rounded-full bg-stone-300 mr-2 transition-all duration-1000 [&.active]:w-10 [&.active]:bg-main "></li>`;
+                positionComment.innerHTML = itemPosition.repeat(
+                  commentLength + 1
+                );
+                positionComment.children[0].classList.add("active");
+              }
+
+              function moveComment(typeAction) {
+                const widthItemComment = commentWrapper.children[0].clientWidth;
+                typeAction === "right"
+                  ? currentIndexComment++
+                  : currentIndexComment--;
+                if (currentIndexComment > commentLength) {
+                  currentIndexComment = 0;
+                } else if (currentIndexComment < 0) {
+                  currentIndexComment = commentLength;
+                }
+                commentWrapper.style.transform = `translateX(-${
+                  widthItemComment * currentIndexComment
+                }px)`;
+
+                const activeElement = document.querySelector(
+                  "#position-comment .active"
+                );
+                activeElement?.classList.remove("active");
+                positionComment.children[currentIndexComment].classList.add(
+                  "active"
+                );
+              }
+            </script>
+          </div>
+          <!-- end action comment -->
+        </div>
+      </section>
+      <!-- END COMMENT -->
+      <!-- LABEL COMMENT -->
+      <section>
+        <div class="container mx-auto mb-8 md:translate-y-16">
+          <div
+            class="mx-4 p-8 shadow-custom bg-white rounded-lg flex flex-col justify-between"
+          >
+            <div class="text-center">
+              <h1 class="text-4xl mb-4 font-bold">
+                Subscribe now for get special features!
+              </h1>
+              <p>Let's subscribe with us and find the fun.</p>
+            </div>
+            <button
+              class="mx-auto bg-main px-10 py-4 font-bold rounded-3xl text-xl mt-12 text-white"
+            >
+              Subscribe now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- END LABEL COMMENT -->
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-stone-100 w-full pb-10 md:pt-14">
+      <div class="container mx-auto md:flex md:flex-row-reverse">
+        <div class="flex justify-between p-8 md:w-1/2">
+          <ul>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer first:mb-4 mb-3"
+            >
+              Product
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Download
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Pricing
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Locations
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Server
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Countries
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Blog
+            </li>
+          </ul>
+
+          <ul>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer first:mb-4 mb-3"
+            >
+              Engage
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              LaslesVPN?
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              FAQ
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Tutorials
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              About us
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Privacy policy
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Terms of service
+            </li>
+          </ul>
+
+          <ul>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer first:mb-4 mb-3"
+            >
+              Earn money
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Become partner
+            </li>
+            <li
+              class="first:font-bold first:cursor-default first:hover:no-underline cursor-pointer hover:text-main transition-all first:mb-4 mb-3"
+            >
+              Affilite
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:w-1/2 md:items-start">
+          <div class="flex flex-col items-center px-8 mt-6 md:w-2/3 md:mx-auto">
+            <div class="flex text-xl">
+              <img
+                class="w-8 h-8 object-cover mr-2 mb-6"
+                src="./public/img/logo.svg"
+                alt=""
+              />
+              <h1>Lasles<span class="font-bold">VPN</span></h1>
+            </div>
+            <p class="text-center md:text-left">
+              Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh
+              arcu id purus ullamcorper. Vel vel erat semper augue.
+            </p>
+            <div class="mt-10 text-3xl text-main flex">
+              <button
+                class="mx-4 relative normal-btn after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:w-12 after:h-12 after:bg-main after:opacity-10 hover:after:opacity-20"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </button>
+              <button
+                class="mx-4 relative normal-btn after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:w-12 after:h-12 after:bg-main after:opacity-10 hover:after:opacity-20"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+              <button
+                class="mx-4 relative normal-btn after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:w-12 after:h-12 after:bg-main after:opacity-10 hover:after:opacity-20"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script>
+      // Tạo một instance của Intersection Observer
+      // const observer = new IntersectionObserver((entries) => {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       console.log("Phần tử hiển thị");
+      //     } else {
+      //       console.log(entry.target);
+      //       console.log("Phần tử ẩn");
+      //     }
+      //   });
+      // });
+
+      // const targetElement = document.querySelector(".section");
+
+      // observer.observe(targetElement);
+    </script>
+  </body>
+</html>
