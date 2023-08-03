@@ -22,6 +22,9 @@ html {
   -webkit-tap-highlight-color: transparent; /* for removing the highlight */
   font-family: 'Montserrat Alternates', sans-serif;
 }
+body {
+  @apply text-sm md:text-base selection:bg-main selection:text-white;
+}
 
 img {
   -drag: none;
@@ -39,4 +42,8 @@ button:not(.normal-btn):hover {
   box-shadow: rgba(245, 56, 56, .2) 0 -25px 18px -14px inset,rgba(245, 56, 56, .15) 0 1px 2px,rgba(245, 56, 56, .15) 0 2px 4px,rgba(245, 56, 56, .15) 0 4px 8px,rgba(245, 56, 56, .15) 0 8px 16px,rgba(245, 56, 56, .15) 0 16px 32px;
 
   transform: scale(1.01) rotate(-1deg);
+}
+
+.container-center {
+  @apply container mx-auto
 }
